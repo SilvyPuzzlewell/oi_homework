@@ -12,4 +12,9 @@ public class StringMessage extends Message {
     public String stringify() {
         return content;
     }
+
+	public String getContent() {
+		return content;
+	}
+    
 }

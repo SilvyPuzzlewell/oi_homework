@@ -2,8 +2,13 @@ package student;
 
 import mas.agents.Message;
 
-public class CoordinateMessage extends Message {
+public class DepotCoordinatesMessage extends Message {
 	private Coordinate coordinate;
+
+	public DepotCoordinatesMessage(Coordinate coordinate) {
+		super();
+		this.coordinate = coordinate;
+	}
 
 	public Coordinate getCoordinate() {
 		return coordinate;
@@ -12,9 +17,6 @@ public class CoordinateMessage extends Message {
 	public void setCoordinate(Coordinate coordinate) {
 		this.coordinate = coordinate;
 	}
-
-	public CoordinateMessage(Coordinate coordinate) {
-		super();
-		this.coordinate = coordinate;
-	}	
+	
+	
 }
